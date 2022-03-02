@@ -27,7 +27,9 @@
       <p v-once>Starting Counter {{ count}}</p>
       <p> Result {{ count}}</p>
       
-      <input type="'text" v-on:input ="setName" v-on:keyup.enter="confirmInput">
+      <input type="'text" v-model="name">
+      <input type="'text" v-model="lastname">
+
       <p>Your name is  {{ fullname }}</p>
       <form v-on:submit.prevent = 'submitForm'>
       <input type="text" >
