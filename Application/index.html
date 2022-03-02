@@ -22,8 +22,8 @@
       <p >{{ outputGoal() }}</p>
       <p>Learn more <a v-bind:href="vueLink">about Vue</a> </p>
       <!-- <button v-on:click ="warn('Some message', $event)">Warning</button> -->
-      <button v-on:click ='add(5)'>Add</button>
-      <button v-on:click ="reduce(5)">Reduce</button>
+      <button @click ='add(5)'>Add</button>
+      <button @click ="reduce(5)">Reduce</button>
       <p v-once>Starting Counter {{ count}}</p>
       <p> Result {{ count}}</p>
       
