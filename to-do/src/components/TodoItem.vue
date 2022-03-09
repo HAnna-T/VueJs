@@ -5,8 +5,8 @@ import DoneButton from "./DoneButton.vue"
 
 <template>
   <div class="container">
-    <slot :class="{ 'completedClass': item.completed }"></slot>
-    <DeleteButton />
+    <slot ></slot>
+    <DeleteButton @delete ="$emit('delete', index)" />
     <DoneButton @complete="$emit('complete', index)" />
   </div>
 </template>

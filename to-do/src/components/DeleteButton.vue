@@ -1,14 +1,11 @@
 <script setup>
 
-const handleDelete =(props)=>{
-    p
- 
-}</script>
+</script>
 
 <template>
-  <button class="delete">
+  <button class="delete"  @click="$emit('delete')">
     <img style="height: 24px" src="/bin.png" />
-  </button>
+  </button >
 </template>
 
 <style>
